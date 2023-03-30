@@ -14,17 +14,14 @@ class MyApp extends StatefulWidget {
 
   static Future<String> get _url async {
     await Future.delayed(const Duration(seconds: 8));
-   
-             //place your twak api code here
-    return '';
-    
+
+    //place your twak api code here
+    return 'https://tawk.to/chat/622c908aa34c2456412ab877/1ftv19826';
   }
 
   @override
   State<MyApp> createState() => _MyAppState();
 }
-
-
 
 class _MyAppState extends State<MyApp> {
   final String title = "Char Support";
@@ -44,7 +41,8 @@ class _MyAppState extends State<MyApp> {
               if (snapshot.hasData) {
                 return WebView(
                   initialUrl:
-                      'https://tawk.to/chat/642588d331ebfa0fe7f58cf8/1gsp9t059',
+                          //place your twak api code here
+                      'https://tawk.to/chat/622c908aa34c2456412ab877/1ftv19826',
                   javascriptMode: JavascriptMode.unrestricted,
                   onWebViewCreated: (WebViewController controller) {
                     _controller.complete(controller);
